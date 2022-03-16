@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/css.css">
+    <script src="JS/js.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stupid Games</title>
 </head>
@@ -34,8 +35,10 @@
     </div>
 </nav>
 </header>
+<main class="first-main">
     <div class="content">
-        <div class="recommended_games">
+        <main class="second-main">
+        <div class="recommended_games thing">
             <span class="recommended-1 white-text">Recommended for you</span>
             <div class="recommended_games1">
             <div class="spel-1 spel-bild">
@@ -136,6 +139,21 @@
             </div>
         </div>
         </div>
-    </div>
+        <div class="slide">
+            <button class="sliderButton right"
+                onclick="changeImage(1)">&#129090;</button>
+            <img class="mySlides" src="Bilder/Spel/image1.jpg" >
+            <img class="mySlides" src="Bilder/Spel/image2.jpg" >
+            <img class="mySlides" src="Bilder/Spel/image3.jpg" >
+            <img class="mySlides" src="Bilder/Spel/image4.jpg" >
+            <img class="mySlides" src="Bilder/Spel/image5.jpg" >
+            <button class="sliderButton left"
+                onclick="changeImage(-1)">&#129088;</button>
+            
+        </div>
+    </main>
+     </div>
+    </main>
+    <script src="JS/dom.js"></script>
 </body>
 </html>

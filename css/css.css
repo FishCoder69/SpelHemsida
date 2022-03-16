@@ -83,6 +83,20 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.first-main{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 0px min(142px, max(8vw, 16px));
+  z-index: 0;
+}
+.second-main{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 96px;
+  margin-top: 24px;
+  gap: 24px;
+}
 .hashtaggar{
   text-decoration: none;
 }
@@ -100,11 +114,9 @@ li.dropdown {
   padding: 8px;
 }
 .content{
- display: flex;
- -webkit-box-pack: center;
- justify-content: center;
- padding: 0px min(142px, max(8vw, 16px));
-  z-index: 0;
+  max-width: max(min(100vw, 1440px), 480px);
+  flex: 1 1 0%;
+  word-break: break-word;
 }
 .hashtag{
   font-family: Averta, -apple-system, "Segoe UI", system-ui, sans-serif;
@@ -132,4 +144,43 @@ li.dropdown {
   font-weight: 700;
   letter-spacing: -1px;
   color: white;
+}
+.slide{
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 36px 0px;
+}
+
+.sliderButton{
+  border: none;
+  font-size: 72px;
+  display: inline-block;
+  padding: 8px 8px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50);
+  -ms-transform: translate(0%, -50%);
+}
+
+.left{
+  left: 4%;
+}
+.right{
+  right: 4%;
+}
+.mySlides{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 96px;
+  margin-top: 24px;
+  gap: 24px;
 }
